@@ -5,38 +5,36 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class OrderItem extends Model
+class CartItem extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'order_item_id';
+    protected $primaryKey = 'cart_item_id';
 
     protected $fillable = [
-        'order_id',
+        'user_id',
         'product_id',
-        'product_name',
         'variant_id',
-        'variant_name',
         'quantity',
         'price',
-        'total',
+        'added_at',
     ];
 
     protected $casts = [
+        'added_at' => 'datetime',
         'price' => 'decimal:2',
-        'total' => 'decimal:2',
     ];
 
     /**
-     * Get the order that owns the order item.
+     * Get the user that owns the cart item.
      */
-    public function order()
+    public function user()
     {
-        return $this->belongsTo(Order::class, 'order_id', 'order_id');
+        return $this->belongsTo(User::class);
     }
 
     /**
-     * Get the product for the order item.
+     * Get the product for the cart item.
      */
     public function product()
     {
@@ -44,7 +42,7 @@ class OrderItem extends Model
     }
 
     /**
-     * Get the product variant for the order item.
+     * Get the product variant for the cart item.
      */
     public function productVariant()
     {

@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
-    public function run(): void
+
+ public function run(): void
     {
         // Tạo tài khoản admin
         User::create([
@@ -17,7 +18,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('admin123'),
             'role' => 'admin',
             'phone' => '0901234567',
-            'address' => '123 Đường Công Nghệ, Quận 1, TP.HCM',
+            'address' => 'Số 106, đường Trần Duy Hưng, Trung Hoà, Cầu Giấy ,  Hà Nội',
         ]);
 
         // Tạo tài khoản khách hàng mẫu
@@ -27,7 +28,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'role' => 'customer',
             'phone' => '0912345678',
-            'address' => '456 Đường Lê Lợi, Quận 3, TP.HCM',
+            'address' => 'Thôn Phú Cường, đường 35, xã Tiền Phong, huyện Mê Linh, Hà Nộ',
         ]);
 
         User::create([
@@ -36,7 +37,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'role' => 'customer',
             'phone' => '0923456789',
-            'address' => '789 Đường Nguyễn Huệ, Quận 1, TP.HCM',
+            'address' => 'Số 210, đường 2 Tháng 9, phường Hòa Cường Bắc, quận Hải Châu, Đà Nẵng',
         ]);
 
         // Tạo thêm 15 khách hàng ngẫu nhiên

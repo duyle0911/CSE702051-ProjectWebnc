@@ -1,0 +1,233 @@
+[
+    {
+        "product_id": 1,
+        "name": "iPhone 16 Pro Max 256GB Ch\u00ednh H\u00e3ng VN\/A",
+        "description": "Thi\u1ebft k\u1ebf premium, x\u1eed l\u00fd m\u01b0\u1ee3t m\u00e0 m\u1ecdi t\u00e1c v\u1ee5 t\u1eeb c\u01a1 b\u1ea3n \u0111\u1ebfn chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7",
+        "price": "29990000.00",
+        "stock_quantity": 180,
+        "category_id": 1,
+        "image_url": "products\/M3adVHkpGgPBqicsGXoqbemaxVuuS9nLMzIS3Dor.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:25:57.000000Z"
+    },
+    {
+        "product_id": 2,
+        "name": "Samsung Galaxy S25 Ultra (5G) 12GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "\u0110i\u1ec7n tho\u1ea1i th\u00f4ng minh cao c\u1ea5p v\u1edbi thi\u1ebft k\u1ebf sang tr\u1ecdng, hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd v\u00e0 camera ch\u1ea5t l\u01b0\u1ee3ng cao.\r\n\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7",
+        "price": "24990000.00",
+        "stock_quantity": 81,
+        "category_id": 1,
+        "image_url": "products\/KJdNmkEdo5ys106iGU72ubA2fQZBUqx0s9rsb0yZ.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:25:40.000000Z"
+    },
+    {
+        "product_id": 3,
+        "name": "Samsung Galaxy S24 Ultra (5G) 12GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Thi\u1ebft k\u1ebf premium, x\u1eed l\u00fd m\u01b0\u1ee3t m\u00e0 m\u1ecdi t\u00e1c v\u1ee5 t\u1eeb c\u01a1 b\u1ea3n \u0111\u1ebfn chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c",
+        "price": "22990000.00",
+        "stock_quantity": 89,
+        "category_id": 1,
+        "image_url": "products\/sj7cdG4kpJbFXHCf4IdLHn1fo9tfv3jQPMxQWx9d.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:26:29.000000Z"
+    },
+    {
+        "product_id": 4,
+        "name": "TECNO Camon 40 (8+8GB\/256GB) - 1 \u0110\u1ed5i 1 12 th\u00e1ng",
+        "description": "Thi\u1ebft k\u1ebf premium, x\u1eed l\u00fd m\u01b0\u1ee3t m\u00e0 m\u1ecdi t\u00e1c v\u1ee5 t\u1eeb c\u01a1 b\u1ea3n \u0111\u1ebfn chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7",
+        "price": "19990000.00",
+        "stock_quantity": 21,
+        "category_id": 1,
+        "image_url": "products\/JikJelwuWGQQbLoMbGPDfpz3lgWFfho3BVzMkzjL.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:26:46.000000Z"
+    },
+    {
+        "product_id": 5,
+        "name": "Xiaomi Redmi Note 14 - 1 \u0110\u1ed5i 1 12 Th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y",
+        "price": "26990000.00",
+        "stock_quantity": 16,
+        "category_id": 1,
+        "image_url": "products\/hwh3cC5JmuIqK7EfUXodCQEbHoRgbhNmpkyp0UaV.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:27:06.000000Z"
+    },
+    {
+        "product_id": 6,
+        "name": "iPhone 16 Plus 128GB Ch\u00ednh H\u00e3ng VN\/A",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c",
+        "price": "22990000.00",
+        "stock_quantity": 12,
+        "category_id": 1,
+        "image_url": "products\/XcFluaVuxtwdEAdloNbSa5IvfwIjUXo4IHFClKSb.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:27:28.000000Z"
+    },
+    {
+        "product_id": 7,
+        "name": "TECNO Camon 40 Pro (8+8GB\/256GB) - 1 \u0110\u1ed5i 1 12 Th\u00e1ng",
+        "description": "\u0110i\u1ec7n tho\u1ea1i th\u00f4ng minh cao c\u1ea5p v\u1edbi thi\u1ebft k\u1ebf sang tr\u1ecdng, hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd v\u00e0 camera ch\u1ea5t l\u01b0\u1ee3ng cao.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7",
+        "price": "17990000.00",
+        "stock_quantity": 68,
+        "category_id": 1,
+        "image_url": "products\/Vt1MzC5AhrHgkl7Dytk11WlodMhtBxL1tDx60j7g.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:27:48.000000Z"
+    },
+    {
+        "product_id": 8,
+        "name": "Xiaomi 14T 12GB 512GB - 1 \u0110\u1ed5i 1 12 Th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng",
+        "price": "14990000.00",
+        "stock_quantity": 86,
+        "category_id": 1,
+        "image_url": "products\/BO4oER9NuBipf8RmD1peyamPWYMLkBUFlCH1j63f.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:28:10.000000Z"
+    },
+    {
+        "product_id": 9,
+        "name": "Samsung Galaxy A56 (5G) 8GB 128GB - 1 \u0110\u1ed5i 1 12 Th\u00e1ng",
+        "description": "\u0110i\u1ec7n tho\u1ea1i th\u00f4ng minh cao c\u1ea5p v\u1edbi thi\u1ebft k\u1ebf sang tr\u1ecdng, hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd v\u00e0 camera ch\u1ea5t l\u01b0\u1ee3ng cao.\r\n\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t",
+        "price": "29990000.00",
+        "stock_quantity": 93,
+        "category_id": 1,
+        "image_url": "products\/DIQffrEFMxF6wtpmoGl8NI4pNApiT65DOZ1SfdS9.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:28:44.000000Z"
+    },
+    {
+        "product_id": 10,
+        "name": "Xiaomi 14T Pro - 1 \u0110\u1ed5i 1 12 Th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng",
+        "price": "24990000.00",
+        "stock_quantity": 52,
+        "category_id": 1,
+        "image_url": "products\/1gYxvvILeRDVq5gK6uWm74noBAZmRSQMxUlhXSfM.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:28:27.000000Z"
+    },
+    {
+        "product_id": 11,
+        "name": "Samsung Galaxy A16 (4G) 4GB 128GB - 1 \u0110\u1ed5i 1 12 Th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng",
+        "price": "19990000.00",
+        "stock_quantity": 17,
+        "category_id": 1,
+        "image_url": "products\/we6tdpfeBjcSqn7lOckbNIGKDrz8biuLV6h8xVtz.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:29:07.000000Z"
+    },
+    {
+        "product_id": 12,
+        "name": "Samsung Galaxy S25 (5G) 12GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7",
+        "price": "14990000.00",
+        "stock_quantity": 62,
+        "category_id": 1,
+        "image_url": "products\/HvrPn0POWyiePEOcMQtIgD8FSXZ5WkCEAVi458C6.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:29:32.000000Z"
+    },
+    {
+        "product_id": 13,
+        "name": "iPad Gen 10 10.9 inch 2022 Wifi 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Thi\u1ebft k\u1ebf premium, x\u1eed l\u00fd m\u01b0\u1ee3t m\u00e0 m\u1ecdi t\u00e1c v\u1ee5 t\u1eeb c\u01a1 b\u1ea3n \u0111\u1ebfn chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y",
+        "price": "9990000.00",
+        "stock_quantity": 23,
+        "category_id": 3,
+        "image_url": "products\/yKS1SysVxgyTpb4HlZKbFYRXwdHsHWnDYSmbkUjY.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:30:02.000000Z"
+    },
+    {
+        "product_id": 14,
+        "name": "iPad Air M3 11 inch Wifi 128GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "\u0110i\u1ec7n tho\u1ea1i th\u00f4ng minh cao c\u1ea5p v\u1edbi thi\u1ebft k\u1ebf sang tr\u1ecdng, hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd v\u00e0 camera ch\u1ea5t l\u01b0\u1ee3ng cao.\r\n\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t",
+        "price": "7990000.00",
+        "stock_quantity": 85,
+        "category_id": 3,
+        "image_url": "products\/sSt0Dwlil6KlvD3OB9z6iEObMfXZ7U2c2GDY29BO.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:30:29.000000Z"
+    },
+    {
+        "product_id": 15,
+        "name": "iPad Mini 7 Wifi 128GB Ch\u00ednh H\u00e3ng VN\/A",
+        "description": "Thi\u1ebft k\u1ebf premium, x\u1eed l\u00fd m\u01b0\u1ee3t m\u00e0 m\u1ecdi t\u00e1c v\u1ee5 t\u1eeb c\u01a1 b\u1ea3n \u0111\u1ebfn chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y",
+        "price": "5990000.00",
+        "stock_quantity": 23,
+        "category_id": 3,
+        "image_url": "products\/WdND6XIStuNMmpjID6VkIn2rg0aXCKQtatfmTdWd.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:31:24.000000Z"
+    },
+    {
+        "product_id": 16,
+        "name": "M\u00e1y t\u00ednh b\u1ea3ng Alcatel Tab 3T8 2GB 32GB Ch\u00ednh H\u00e3ng",
+        "description": "\u0110i\u1ec7n tho\u1ea1i th\u00f4ng minh cao c\u1ea5p v\u1edbi thi\u1ebft k\u1ebf sang tr\u1ecdng, hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd v\u00e0 camera ch\u1ea5t l\u01b0\u1ee3ng cao.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7",
+        "price": "4490000.00",
+        "stock_quantity": 51,
+        "category_id": 3,
+        "image_url": "products\/lBr9vIcUih5X1KsQcwqgNcNIxe1ulBnbdVc5nvio.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:31:48.000000Z"
+    },
+    {
+        "product_id": 17,
+        "name": "Macbook Pro 14 inch M4 Pro 12CPU 16GPU 24GB 512GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c",
+        "price": "24990000.00",
+        "stock_quantity": 70,
+        "category_id": 2,
+        "image_url": "products\/1wxwfe2VCrSvSMSwOMQhEluPI3fsKGV0nEct1DFU.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:33:35.000000Z"
+    },
+    {
+        "product_id": 18,
+        "name": "Macbook Air M2 13.6 inch 8GPU 16GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Smartphone flagship v\u1edbi c\u00f4ng ngh\u1ec7 ti\u00ean ti\u1ebfn, m\u00e0n h\u00ecnh s\u1eafc n\u00e9t v\u00e0 pin b\u1ec1n b\u1ec9 c\u1ea3 ng\u00e0y.\r\n\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t",
+        "price": "17990000.00",
+        "stock_quantity": 87,
+        "category_id": 2,
+        "image_url": "products\/ZqftzAVyWM6ALPZXSFpBOeGZiB0jhelEKP2raCj9.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:33:57.000000Z"
+    },
+    {
+        "product_id": 19,
+        "name": "Macbook Air M4 13.6 Inches 10 CPU 8GPU 16GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Thi\u1ebft k\u1ebf premium, x\u1eed l\u00fd m\u01b0\u1ee3t m\u00e0 m\u1ecdi t\u00e1c v\u1ee5 t\u1eeb c\u01a1 b\u1ea3n \u0111\u1ebfn chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t",
+        "price": "6990000.00",
+        "stock_quantity": 19,
+        "category_id": 2,
+        "image_url": "products\/6ZrX7Qus4rtDARe1Kf3pDSeR1yDDMazQF3E2aFQV.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:37:48.000000Z"
+    },
+    {
+        "product_id": 20,
+        "name": "MacBook Air M1 2020 13 inch 8GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "\u0110i\u1ec7n tho\u1ea1i th\u00f4ng minh cao c\u1ea5p v\u1edbi thi\u1ebft k\u1ebf sang tr\u1ecdng, hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd v\u00e0 camera ch\u1ea5t l\u01b0\u1ee3ng cao.\r\n\r\n\u2705 T\u01b0 v\u1ea5n k\u1ef9 thu\u1eadt 24\/7\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 B\u1ea3o h\u00e0nh ch\u00ednh h\u00e3ng 12 th\u00e1ng",
+        "price": "4990000.00",
+        "stock_quantity": 89,
+        "category_id": 2,
+        "image_url": "products\/anoVlq5cOl6XxMojtN87QjIzeMKFOiydbc1msgko.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T10:38:06.000000Z"
+    },
+    {
+        "product_id": 21,
+        "name": "Macbook Air M2 2023 15 inch 8GB 256GB - 1 \u0111\u1ed5i 1 12 th\u00e1ng",
+        "description": "Laptop cao c\u1ea5p v\u1edbi hi\u1ec7u n\u0103ng m\u1ea1nh m\u1ebd, ph\u00f9 h\u1ee3p cho c\u00f4ng vi\u1ec7c v\u00e0 s\u00e1ng t\u1ea1o chuy\u00ean nghi\u1ec7p.\r\n\r\n\u2705 H\u1ed7 tr\u1ee3 tr\u1ea3 g\u00f3p 0% l\u00e3i su\u1ea5t\r\n\u2705 \u0110\u1ed5i tr\u1ea3 trong 15 ng\u00e0y\r\n\u2705 Giao h\u00e0ng mi\u1ec5n ph\u00ed to\u00e0n qu\u1ed1c, free ship",
+        "price": "59990000.00",
+        "stock_quantity": 52,
+        "category_id": 2,
+        "image_url": "products\/Jt79pZNRWKTeTr0Qe7YCuaB3U00hLDXpHbm7UWuS.jpg",
+        "created_at": "2025-06-17T14:10:05.000000Z",
+        "updated_at": "2025-06-18T11:05:26.000000Z"
+    }
+]

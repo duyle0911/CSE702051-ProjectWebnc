@@ -304,3 +304,33 @@ class ProductVariantSeeder extends Seeder
         $this->command->info('Đã tạo xong các biến thể sản phẩm!');
     }
 }
+
+
+/*
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\ProductVariant;
+
+class ProductVariantSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $file = database_path('seeders/data/product_variants.json');
+
+        if (!file_exists($file)) {
+            $this->command->error('❌ Không tìm thấy file product_variants.json');
+            return;
+        }
+
+        $data = json_decode(file_get_contents($file), true);
+
+        foreach ($data as $variant) {
+            unset($variant['variant_id']); // hoặc 'id' nếu bạn dùng id mặc định
+            ProductVariant::create($variant);
+        }
+
+        $this->command->info('✅ Đã import biến thể sản phẩm từ JSON!');
+    }
+}
+    */

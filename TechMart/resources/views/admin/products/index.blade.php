@@ -117,6 +117,7 @@
         </table>
     </div>
     
+    {{-- Pagination --}}
     @if($products->hasPages())
         <div class="card-footer">
             {{ $products->withQueryString()->links('pagination::bootstrap-5') }}

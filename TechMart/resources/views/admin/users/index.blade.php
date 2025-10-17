@@ -138,9 +138,10 @@
         </div>
 
         <!-- Pagination -->
+        {{-- ADD --}}
         @if($users->hasPages())
-            <div class="d-flex justify-content-center mt-4">
-                {{ $users->withQueryString()->links() }}
+        <div class="card-footer">
+                {{ $users->withQueryString()->links('pagination::bootstrap-5') }}
             </div>
         @endif
     </div>

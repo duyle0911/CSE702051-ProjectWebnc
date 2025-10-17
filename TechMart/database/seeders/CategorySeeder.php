@@ -1,5 +1,11 @@
 <?php
 
+// Chạy dòng này để lưu dữ liệu 
+// php artisan tinker
+/* file_put_contents(
+    base_path('database/seeders/data/categories.json'),
+    json_encode(\App\Models\Category::all()->toArray(), JSON_PRETTY_PRINT)
+);*/
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -9,19 +15,20 @@ class CategorySeeder extends Seeder
 {
     public function run(): void
     {
-        $categories = [
-            'Điện thoại',
-            'Laptop',
-            'Tablet',
-            'Phụ kiện',
-        ];
+        $file = database_path('seeders/data/categories.json');
 
-        foreach ($categories as $categoryName) {
-            Category::create([
-                'category_name' => $categoryName,
-            ]);
+        if (!file_exists($file)) {
+            $this->command->error("❌ Không tìm thấy file: categories.json");
+            return;
         }
 
-        $this->command->info('Đã tạo xong các danh mục sản phẩm!');
+        $data = json_decode(file_get_contents($file), true);
+
+        foreach ($data as $item) {
+            unset($item['category_id']); // nếu đang dùng tự tăng ID
+            Category::create($item);
+        }
+
+        $this->command->info('✅ Đã import danh mục từ file JSON thành công!');
     }
 }

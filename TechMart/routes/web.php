@@ -12,13 +12,41 @@ use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
-
+use App\Http\Controllers\PaymentController;
+use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\StripeController;
+use App\Http\Controllers\StripeCheckoutController;
+use App\Http\Controllers\VNPayController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 */
 
+
+Route::get('/vnpay-return', [VNPayController::class, 'returnPayment'])->name('vnpay.return');
+
+
+// Stripe
+Route::get('/checkout', [StripeCheckoutController::class, 'checkout'])->name('checkout');
+Route::get('/checkout/success', [StripeCheckoutController::class, 'success'])->name('checkout.success');
+Route::get('/checkout/cancel', [StripeCheckoutController::class, 'cancel'])->name('checkout.cancel');
+//Route::get('/stripe', [StripeController::class, 'checkout'])->name('stripe.checkout');
+//Route::get('/stripe/success', [StripeController::class, 'success'])->name('stripe.success');
+//Route::get('/stripe/cancel', [StripeController::class, 'cancel'])->name('stripe.cancel');
+//Route::post('/stripe/session', [StripeController::class, 'session'])->name('stripe.session');
+//Momo
+Route::get('/checkout/momo/return', [CheckoutController::class, 'momoReturn'])->name('checkout.momo.return');
+// web.php
+Route::get('/checkout/momo/{order}', [CheckoutController::class, 'redirectToMomo'])->name('checkout.momo');
+//VNpay
+Route::get('/checkout/vnpay/{orderId}', [CheckoutController::class, 'vnpay'])->name('checkout.vnpay');
+Route::get('/checkout/success/{orderId}', [CheckoutController::class, 'success'])->name('checkout.success');
+//Route::get('/vnpay-pay', [VNPayController::class, 'createPayment'])->name('vnpay.pay');
+//Route::get('/vnpay-return', [VNPayController::class, 'returnPayment'])->name('vnpay.return');
+// callback sau thanh toán
+//Route::get('/payment/momo/callback', [PaymentController::class, 'handleMomoReturn'])->name('payment.momo.callback');
+//Route::post('/payment/momo/notify', [PaymentController::class, 'handleMomoNotify'])->name('payment.momo.notify');
 // Home route
 Route::get('/', [HomeController::class, 'index'])->name('home');
 

@@ -4,7 +4,7 @@
 @section('header', 'Quản lý sản phẩm')
 
 @section('content')
-{{-- Flash messages --}}
+
 @if(session('success'))
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <i class="bi bi-check-circle-fill me-2"></i> {{ session('success') }}
@@ -27,7 +27,6 @@
 </div>
 
 
-<!-- Filters -->
 <div class="card mb-4">
     <div class="card-body">
         <form method="GET" action="{{ route('admin.products.index') }}" class="row g-3">
@@ -55,7 +54,7 @@
     </div>
 </div>
 
-<!-- Products Table -->
+
 <div class="card">
     <div class="table-responsive">
         <table class="table table-hover align-middle mb-0">

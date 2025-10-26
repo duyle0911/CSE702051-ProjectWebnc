@@ -110,12 +110,11 @@ class UserController extends Controller
 
     public function destroy(User $user)
     {
-        // Prevent deleting yourself
+ 
         if ($user->id === auth()->id()) {
             return back()->with('error', 'Bạn không thể xóa tài khoản của chính mình.');
         }
 
-        // Check if user has orders
         if ($user->orders()->count() > 0) {
             return back()->with('error', 'Không thể xóa người dùng có đơn hàng liên quan.');
         }

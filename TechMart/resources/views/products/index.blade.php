@@ -1,131 +1,153 @@
-@extends('layouts.app')
+@extends('layouts.admin')
+
+@section('title', 'Quản lý sản phẩm')
+@section('header', 'Quản lý sản phẩm')
 
 @section('content')
-<div class="row">
-    @foreach($products as $product)
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm">
-                <a href="{{ route('products.show', $product) }}">
-                    @if($product->image_url)
-                        <img src="{{ asset('storage/' . $product->image_url) }}" class="card-img-top" alt="{{ $product->name }}"style="aspect-ratio: 1 / 1; width: 100%; object-fit: cover;">
-                    @else
-                        <div class="text-center py-5 bg-light">
-                            <i class="fas fa-image text-muted fs-1"></i>
-                        </div>
-                    @endif
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title fs-6">
-                        <a href="{{ route('products.show', $product) }}" class="text-decoration-none text-dark">
-                            {{ $product->name }}
-                        </a>
-                    </h5>
-                    <p class="text-danger fw-semibold">{{ number_format($product->price, 2) }}₫</p>
-                    <p class="text-muted small mb-2">Kho: {{ $product->stock_quantity }}</p>
-                                    @if($product->stock_quantity > 0)
-                                        <button onclick="addToCart({{ $product->product_id }})" class="btn btn-danger btn-sm w-100 add-to-cart-btn" data-product-id="{{ $product->product_id }}">
-                                            <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ
-                                        </button>
-                    @else
-                        <button class="btn btn-secondary mt-auto w-100" disabled>Hết hàng</button>
-                    @endif
-                </div>
-            </div>
-        </div>
-    @endforeach
+{{-- Flash messages --}}
+@if(session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i> {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
+@if(session('error'))
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i> {{ session('error') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
+<div class="mb-4 d-flex align-items-center justify-content-between" style="min-height: 60px;">
+    <h1 class="h4 mb-0">Quản lý sản phẩm</h1>
+    <a href="{{ route('admin.products.create') }}" class="btn btn-primary d-flex align-items-center">
+        <i class="bi bi-plus-circle me-1"></i> Thêm sản phẩm
+    </a>
 </div>
 
 
-
-@endsection
-
-@auth
-<!-- Toast notification -->
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <i class="fas fa-shopping-cart text-success me-2"></i>
-            <strong class="me-auto">Giỏ hàng</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body" id="toastMessage">
-            <!-- Message will be inserted here -->
-        </div>
+<!-- Filters -->
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="GET" action="{{ route('admin.products.index') }}" class="row g-3">
+            <div class="col-md-4">
+                <label for="search" class="form-label">Tìm kiếm</label>
+                <input type="text" name="search" id="search" value="{{ request('search') }}" class="form-control" placeholder="Tên sản phẩm...">
+            </div>
+            <div class="col-md-4">
+                <label for="category" class="form-label">Danh mục</label>
+                <select name="category" id="category" class="form-select">
+                    <option value="">Tất cả danh mục</option>
+                    @foreach($categories as $category)
+                        <option value="{{ $category->category_id }}" {{ request('category') == $category->category_id ? 'selected' : '' }}>
+                            {{ $category->category_name }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="col-md-4 align-self-end">
+                <button type="submit" class="btn btn-success w-100">
+                    <i class="bi bi-filter"></i> Lọc
+                </button>
+            </div>
+        </form>
     </div>
 </div>
-@endauth
 
-@auth
+<!-- Products Table -->
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Danh mục</th>
+                    <th>Giá</th>
+                    <th>Tồn kho</th>
+                    <th>Biến thể</th>
+                    <th class="text-end">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @forelse($products as $product)
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-3">
+                                    @if($product->image_url)
+                                        <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->name }}" class="rounded-circle" width="40" height="40">
+                                    @else
+                                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded-circle" style="width: 40px; height: 40px;">
+                                            <i class="bi bi-image"></i>
+                                        </div>
+                                    @endif
+                                </div>
+                                <div>
+                                    <div class="fw-bold">{{ $product->name }}</div>
+                                    <div class="text-muted small">ID: {{ $product->product_id }}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>{{ $product->category->category_name ?? 'N/A' }}</td>
+                        <td>${{ number_format($product->price, 2) }}</td>
+                        <td>
+                            <span class="badge 
+                                {{ $product->stock_quantity > 10 ? 'bg-success' : ($product->stock_quantity > 0 ? 'bg-warning text-dark' : 'bg-danger') }}">
+                                {{ $product->stock_quantity }}
+                            </span>
+                        </td>
+                        <td>{{ $product->variants->count() }} biến thể</td>
+                        <td class="text-end">
+                            <a href="{{ route('admin.products.show', $product->product_id) }}" class="btn btn-sm btn-outline-primary">Xem</a>
+                            <a href="{{ route('admin.products.edit', $product->product_id) }}" class="btn btn-sm btn-outline-secondary">Sửa</a>
+                            <form action="{{ route('admin.products.destroy', $product->product_id) }}" method="POST" class="d-inline delete-form">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-outline-danger delete-btn">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="6" class="text-center text-muted py-4">Không có sản phẩm nào</td>
+                    </tr>
+                @endforelse
+            </tbody>
+        </table>
+    </div>
+    
+    @if($products->hasPages())
+        <div class="card-footer">
+            {{ $products->withQueryString()->links('pagination::bootstrap-5') }}
+        </div>
+    @endif
+</div>
+@endsection
+@push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-function addToCart(productId) {
-    const button = document.querySelector(`[data-product-id="${productId}"]`);
-    const originalText = button.innerHTML;
-    
-    button.disabled = true;
-    button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Đang thêm...';
-
-    const formData = new FormData();
-    formData.append('product_id', productId);
-    formData.append('quantity', 1);
-    formData.append('_token', '{{ csrf_token() }}');
-
-    fetch('{{ route("cart.store") }}', {
-        method: 'POST',
-        body: formData,
-        headers: { 'X-Requested-With': 'XMLHttpRequest' }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            showToast(data.message, 'success');
-            updateCartCount();
-        } else {
-            showToast(data.message || 'Có lỗi xảy ra', 'error');
-        }
-    })
-    .catch(error => {
-        console.error('Lỗi:', error);
-        showToast('Không thể thêm sản phẩm vào giỏ', 'error');
-    })
-    .finally(() => {
-        button.disabled = false;
-        button.innerHTML = originalText;
+    document.addEventListener('DOMContentLoaded', function () {
+        const deleteForms = document.querySelectorAll('.delete-form');
+        deleteForms.forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                Swal.fire({
+                    title: 'Xác nhận xóa?',
+                    text: "Bạn sẽ không thể khôi phục lại sản phẩm này!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#6c757d',
+                    confirmButtonText: 'Xóa',
+                    cancelButtonText: 'Hủy'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
     });
-}
-
-function showToast(message, type = 'success') {
-    const toast = document.getElementById('cartToast');
-    const toastMessage = document.getElementById('toastMessage');
-    const toastHeader = toast.querySelector('.toast-header');
-    
-    toastMessage.textContent = message;
-
-    const icon = toastHeader.querySelector('i');
-    if (type === 'success') {
-        icon.className = 'fas fa-check-circle text-success me-2';
-        toastHeader.classList.remove('bg-danger');
-        toastHeader.classList.add('bg-success', 'text-white');
-    } else {
-        icon.className = 'fas fa-exclamation-circle text-danger me-2';
-        toastHeader.classList.remove('bg-success');
-        toastHeader.classList.add('bg-danger', 'text-white');
-    }
-
-    const bsToast = new bootstrap.Toast(toast);
-    bsToast.show();
-}
-
-function updateCartCount() {
-    fetch('{{ route("cart.count") }}')
-        .then(response => response.json())
-        .then(data => {
-            const cartBadge = document.querySelector('.cart-count');
-            if (cartBadge) {
-                cartBadge.textContent = data.count;
-                cartBadge.style.display = data.count > 0 ? 'inline' : 'none';
-            }
-        })
-        .catch(error => console.error('Lỗi khi cập nhật giỏ hàng:', error));
-}
 </script>
-@endauth
+@endpush
